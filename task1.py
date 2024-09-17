@@ -6,7 +6,7 @@
 Яка розподіленість довжини листка (petal length) для всіх ірисів?
 """
 
-from main import iris_df
+from data_loader import iris_df
 
 mean_sepal_length = iris_df.groupby('class')['sepal_length'].mean()
 print(f'Середня довжина чашелистика для кожного виду ірису: \n{mean_sepal_length}')

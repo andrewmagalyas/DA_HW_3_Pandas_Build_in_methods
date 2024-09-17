@@ -8,7 +8,7 @@
 групування та агрегацію, які можна виконати за допомогою бібліотеки pandas на прикладі даних Iris.
 """
 
-from main import iris_df
+from data_loader import iris_df
 
 avg_petal_width = iris_df.groupby('class')['petal_width'].mean()
 print(f'Середня ширина пелюстки для кожного виду ірису: \n{avg_petal_width}')

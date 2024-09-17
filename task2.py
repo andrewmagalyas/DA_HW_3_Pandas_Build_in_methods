@@ -5,7 +5,7 @@
 Відфільтруйте дані для ірисів з довжиною листка (petal length) більше 5.0.
 """
 
-from main import iris_df
+from data_loader import iris_df
 
 versicolor = iris_df[iris_df['class'] == 'Iris-versicolor']
 print(f'Iris versicolor data: \n{versicolor}')
